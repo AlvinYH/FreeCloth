@@ -1,0 +1,96 @@
+hydra:
+  run:
+    dir: outputs/${datamodule.name}/${expname}
+
+expname: null
+epoch: last
+resume: false
+device: cuda:0
+mode: train
+ckpt_dir: ./checkpoints
+save_ckpt_train_steps: 5000  # save checkpoints every n steps
+
+smpl:
+  model_path: null
+  model_type: 'smplx'
+  n_verts: 10475
+
+datamodule:
+  _target_: lib.dataset.resynth.ReSynthDataModule
+  name: resynth
+  subject_id: rp_felice_posed_004
+  params:
+    num_workers: 0
+    data_path: data/resynth
+    assets_path: assets
+    smpl_model_path: ${smpl.model_path}
+    smpl_model_type: ${smpl.model_type}
+    subject_list: config/resynth_subject_list.yaml
+    spacing: 1
+    batch_size: 8
+
+    # use uv_resample for better visual quality, but lower efficiency (testing)
+    uv_resample: False
+    num_resample_points: 60000  
+
+trainer:
+  gradient_clip_val: 0.1
+  deterministic: false
+  max_epochs: 1000
+  check_val_every_n_epoch: 25
+  devices: -1
+  num_sanity_val_steps: 0
+
+model:
+  deformer:
+    dim_pose_code: 128
+    dim_outfit_code: 64
+    encoder_arch: 'pointnet2'
+    decoder_arch: 'shape_decoder'
+  
+  generator:
+    num_points: 16384
+    n_primitives: 8
+    hidden_size: 512
+    bottleneck_size: 512
+    outfit_code_size: ${model.deformer.dim_outfit_code}
+    use_SElayer: True
+    use_AdaIn: share
+    encode: Pointfeat
+
+  optim:
+    lr: 3e-4
+    lr_gen: 5e-4
+    lr_code: 5e-4
+
+  lambda_cd: 1e4
+  lambda_nml: 1.0
+  lambda_reg: 1e4
+  lambda_latent_local: 1.0
+  lambda_latent_global: 1.0
+
+  # collision loss
+  use_collision: True
+  lambda_collision: 0.025
+  collision_threshold: 0.005
+
+  use_repulsion: False
+  radius_repulsion: 1e-2
+  lambda_repulsion: 100.0
+
+  use_normal_bidirectional: True
+  fps_downsample: True
+  n_all_points: 47911
+  pose_augmentation: True #  x-reflection
+
+  epoch_start_nml: 400
+  residual_scaling: 0.01
+  
+  # visualization settings
+  vis:
+    enabled: True
+    output_dir: vis
+    pc_dir: pc
+    render_o3d: True
+    n_every_train: 500  # visualize every n train steps
+    n_every_test: 1  # visualize every n test samples
