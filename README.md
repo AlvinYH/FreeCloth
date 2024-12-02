@@ -11,6 +11,8 @@
 Peking University
 
 <p align="center">
+<a href="https://arxiv.org/abs/2411.19942", target="_blank">
+<img src="https://img.shields.io/badge/arXiv-2411.19942-b31b1b.svg?style=for-the-badge"></a>
 <a href="https://alvinyh.github.io/FreeCloth/", target="_blank">
 <img src="https://img.shields.io/badge/Project-Page-blue?style=for-the-badge&logo=Google%20chrome&logoColor=white" alt="Project Page"></a>
 <a href="https://www.youtube.com/watch?v=y9hM925p3_0", target="_blank">
@@ -142,6 +144,15 @@ We provide pretrained model weights for five subjects from the ReSynth dataset. 
 ## Citation
 Cite as below if you find this repository is helpful to your project:
 ```bibtex
+@misc{ye2024freecloth,
+      title={Free-form Generation Enhances Challenging Clothed Human Modeling}, 
+      author={Hang Ye and Xiaoxuan Ma and Hai Ci and Wentao Zhu and Yizhou Wang},
+      year={2024},
+      eprint={2411.19942},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.19942}, 
+}
 ```
 
 ## Acknowledgement
