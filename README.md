@@ -1,6 +1,6 @@
 <div align="center">
 
-# FreeCloth: Free-form Generation Enhances Challenging Clothed Human Modeling
+# FreeCloth: Free-form Generation Enhances Challenging Clothed Human Modeling (CVPR 2025)
   
 <a href="https://alvinyh.github.io/">Hang Ye</a>,
 <a href="https://shirleymaxx.github.io/">Xiaoxuan Ma</a>,
@@ -25,6 +25,8 @@ Peking University
 </p>
 
 ## Updates
+[2025/2/28] FreeCloth has been accepted to CVPR 2025!
+
 [2024/12/01] Code released!
 
 ## TODOs
