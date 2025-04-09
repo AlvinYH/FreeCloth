@@ -1,21 +1,25 @@
 <div align="center">
 
-# FreeCloth: Free-form Generation Enhances Challenging Clothed Human Modeling (CVPR 2025)
+# FreeCloth: Free-form Generation Enhances Challenging Clothed Human Modeling (CVPR 2025 Highlight)
   
-<a href="https://alvinyh.github.io/">Hang Ye</a>,
-<a href="https://shirleymaxx.github.io/">Xiaoxuan Ma</a>,
-<a href="https://haici.cc/">Hai Ci</a>,
-<a href="https://wentao.live/">Wentao Zhu</a>,
-<a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Yizhou Wang</a>
+<a href="https://alvinyh.github.io/">Hang Ye</a><sup>1</sup>,
+<a href="https://shirleymaxx.github.io/">Xiaoxuan Ma</a><sup>1*</sup>,
+<a href="https://haici.cc/">Hai Ci</a><sup>1</sup>,
+<a href="https://wentao.live/">Wentao Zhu</a><sup>1</sup>,
+<a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Yizhou Wang</a><sup>1,2,3,4*</sup>
 
-Peking University
+<sup>1</sup>Center on Frontiers of Computing Studies, School of Computer Science, Peking University,</h1><br>
+<sup>2</sup>Inst. for Artificial Intelligence, Peking University,  </h1>
+<sup>3</sup>Nat’l Eng. Research Center of Visual Technology,</h1><br>
+<sup>4</sup>State Key Laboratory of General Artificial Intelligence, Peking University</h1><br>
+<sup>*</sup>Corresponding authors<br>
 
-<p align="center">
+<p align="center" style="margin:20px;">
 <a href="https://arxiv.org/abs/2411.19942", target="_blank">
 <img src="https://img.shields.io/badge/arXiv-2411.19942-b31b1b.svg?style=for-the-badge"></a>
 <a href="https://alvinyh.github.io/FreeCloth/", target="_blank">
 <img src="https://img.shields.io/badge/Project-Page-blue?style=for-the-badge&logo=Google%20chrome&logoColor=white" alt="Project Page"></a>
-<a href="https://www.youtube.com/watch?v=y9hM925p3_0", target="_blank">
+<a href="https://www.youtube.com/watch?v=4dyM1hjTBdQ", target="_blank">
 <img src="https://img.shields.io/badge/YouTube-video-black?style=for-the-badge&logo=youtube&logoColor=white&labelColor=FF0000&color=black" alt="YouTube video"></a>
 </p>
 </div>
