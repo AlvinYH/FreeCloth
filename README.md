@@ -150,14 +150,13 @@ We provide pretrained model weights for five subjects from the ReSynth dataset. 
 ## Citation
 Cite as below if you find this repository is helpful to your project:
 ```bibtex
-@misc{ye2024freecloth,
-      title={Free-form Generation Enhances Challenging Clothed Human Modeling}, 
-      author={Hang Ye and Xiaoxuan Ma and Hai Ci and Wentao Zhu and Yizhou Wang},
-      year={2024},
-      eprint={2411.19942},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.19942}, 
+@inproceedings{ye2025freecloth,
+    author    = {Ye, Hang and Ma, Xiaoxuan and Ci, Hai and Zhu, Wentao and Wang, Yizhou},
+    title     = {FreeCloth: Free-form Generation Enhances Challenging Clothed Human Modeling},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {15987-15997}
 }
 ```
 
